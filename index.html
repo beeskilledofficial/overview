@@ -87,12 +87,6 @@ h2{margin-bottom:16px;color:#1e3a8a}
   padding:22px;
   border-radius:10px;
 }
-/* Force lowercase for password text */
-.password-text {
-  text-transform: none !important;
-  font-variant: none !important;
-  font-feature-settings: normal !important;
-}
 footer{
   background:#0f172a;
   color:#cbd5f5;
@@ -136,9 +130,10 @@ footer{
 
     <p><strong>Username Format:</strong> FirstName / Last4DigitsOfPhoneNumber</p>
     <p><strong>Example:</strong> <code>Rahul/1234</code></p>
-    <p class="password-text"><strong>Password Format:</strong> Username<span style="text-transform:none !important;">@</span><span style="text-transform:lowercase !important;">s</span>killed123</p>
-    <p class="password-text"><strong>Example:</strong> <code style="text-transform:none !important;">Rahul/1234<span style="text-transform:none !important;">@</span><span style="text-transform:lowercase !important;">s</span>killed123</code></p>
-    <p><strong>Note:</strong> Do not change your password. Password mein '@' ke baad chhota 's' hai.</p>
+    <p><strong>Password Format:</strong> Username<span style="font-family: monospace;">@</span><span style="font-family: monospace; text-transform: lowercase; font-variant: normal;">skilled</span><span style="font-family: monospace;">123</span></p>
+    <p><strong>Example Password:</strong> <code style="font-family: monospace;">Rahul/1234@skilled123</code></p>
+ 
+    <p><strong>Note:</strong> Do not change your password.</p>
   </div>
 </section>
 
